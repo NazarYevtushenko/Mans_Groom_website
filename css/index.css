@@ -1074,8 +1074,8 @@ img {
 
 .schedule {
     color: #fff;
-    background: url(../Img/schedule-bg.webp) center/cover no-repeat;
-    position: relative
+    background: url(../img/schedule-bg.jpg) center/cover no-repeat;
+    position: relative;
 }
 
 .schedule .overlay {
@@ -1532,7 +1532,7 @@ img {
 }
 
 .promo_popup {
-    background: url(../Img/blog09.jpg) center/cover no-repeat,rgba(32,32,32,.7);
+    background: url(../img/blog09.jpg) center/cover no-repeat,rgba(32,32,32,.7);
     background-blend-mode: overlay;
     padding: 30px;
     max-width: 650px;
