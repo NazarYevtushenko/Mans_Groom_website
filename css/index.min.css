@@ -173,6 +173,15 @@ img {
   width: 100%
 }
 
+
+.header img, .footer img{
+  /* width: 40%; */
+  margin: 0 auto;
+  padding: 0;
+  object-fit: contain;
+}
+
+
 .section {
   padding: 80px 0
 }
