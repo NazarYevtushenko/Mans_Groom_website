@@ -177,7 +177,7 @@ img {
 .header img, .footer img{
   /* width: 40%; */
   margin: 0 auto;
-  padding: 0;
+  padding: 30px;
   object-fit: contain;
 }
 

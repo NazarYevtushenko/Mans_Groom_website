@@ -1,4 +1,15 @@
-
+/**
+ * Barbercrop
+ * Barbercrop is a full featured barber shop template
+ * Exclusively on https://1.envato.market/barbercrop-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.4
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lamber Lilith (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
 * {
     margin: 0;
     padding: 0;
@@ -11,11 +22,11 @@ html {
     scroll-behavior: smooth
 }
 
-body,html {
+body, html {
     overflow-x: hidden
 }
 
-ol,ul {
+ol, ul {
     list-style: none
 }
 
@@ -23,7 +34,7 @@ a {
     text-decoration: none
 }
 
-a,button,input,textarea {
+a, button, input, textarea {
     background: 0 0;
     color: inherit;
     font-family: inherit;
@@ -90,11 +101,11 @@ html.fixed {
 }
 
 body {
-    color: #bbb;
+    color: #000;
     background: #fff;
     font-size: 16px;
     line-height: 1.7;
-    font-family: Roboto,sans-serif
+    font-family: Roboto, sans-serif
 }
 
 body.swal2-shown {
@@ -112,11 +123,11 @@ main {
     transition: padding-top .3s ease-in-out
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: Oswald,sans-serif;
+h1, h2, h3, h4, h5, h6 {
+    font-family: Oswald, sans-serif;
     font-weight: 500;
     text-transform: uppercase;
-    color: #fff
+    color: #000
 }
 
 h1 {
@@ -149,7 +160,7 @@ h6 {
     line-height: 1.3
 }
 
-a,button,input,textarea {
+a, button, input, textarea {
     -webkit-transition: .3s ease-in-out;
     -o-transition: .3s ease-in-out;
     transition: .3s ease-in-out
@@ -161,6 +172,15 @@ img {
     object-fit: cover;
     width: 100%
 }
+
+
+.header img, .footer img{
+    /* width: 40%; */
+    margin: 0 auto;
+    padding: 30px;
+    object-fit: contain;
+}
+
 
 .section {
     padding: 80px 0
@@ -180,7 +200,7 @@ img {
 
 .section_header-subtitle {
     text-transform: uppercase;
-    font-family: Oswald,sans-serif;
+    font-family: Oswald, sans-serif;
     font-weight: 600;
     color: #2c2c2c;
     font-size: 80px;
@@ -198,11 +218,11 @@ img {
 
 .theme-element {
     text-align: center;
-    background: #000;
-    color: #fff;
+    background: #fff;
+    color: #000;
     text-transform: uppercase;
-    border: 2px solid #eb1616;
-    font-family: Oswald,sans-serif;
+    border: 2px solid #fff;
+    font-family: Oswald, sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 22px;
@@ -214,14 +234,14 @@ img {
 }
 
 .theme-element.btn:hover {
-    color: #eb1616
+    color: #fff
 }
 
 .theme-element.btn--revert {
     background: 0 0
 }
 
-.theme-element.btn--revert.current,.theme-element.btn--revert:focus,.theme-element.btn--revert:hover {
+.theme-element.btn--revert.current, .theme-element.btn--revert:focus, .theme-element.btn--revert:hover {
     background: #eb1616;
     color: #fff
 }
@@ -230,7 +250,7 @@ img {
     padding: 5px 10px
 }
 
-.theme-element:focus,.theme-element:hover {
+.theme-element:focus, .theme-element:hover {
     background: 0 0
 }
 
@@ -305,7 +325,7 @@ img {
     opacity: 0
 }
 
-.field:focus,.field:hover {
+.field:focus, .field:hover {
     border-color: #fff
 }
 
@@ -331,7 +351,7 @@ img {
     transition: width .5s ease-in-out
 }
 
-.link--underline:focus:after,.link--underline:hover:after {
+.link--underline:focus:after, .link--underline:hover:after {
     width: 100%
 }
 
@@ -353,7 +373,7 @@ img {
 .brand-logo_name {
     color: #fff;
     text-transform: uppercase;
-    font-family: Oswald,sans-serif;
+    font-family: Oswald, sans-serif;
     font-weight: 500;
     font-size: 28px;
     line-height: 1
@@ -429,9 +449,9 @@ img {
     background: #fff;
     min-width: 280px;
     max-width: 360px;
-    display: -webkit-box!important;
-    display: -ms-flexbox!important;
-    display: flex!important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -448,7 +468,7 @@ img {
     transition: color .3s ease-in-out
 }
 
-.alert_popup-close:focus,.alert_popup-close:hover {
+.alert_popup-close:focus, .alert_popup-close:hover {
     color: #eb1616
 }
 
@@ -468,7 +488,7 @@ img {
     -webkit-transition: -webkit-transform .5s ease-in-out;
     transition: transform .5s ease-in-out;
     -o-transition: transform .5s ease-in-out;
-    transition: transform .5s ease-in-out,-webkit-transform .5s ease-in-out
+    transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out
 }
 
 .header--pinned {
@@ -535,7 +555,7 @@ img {
     width: 0
 }
 
-.header_trigger.active .line:nth-child(1),.header_trigger.active .line:nth-child(3) {
+.header_trigger.active .line:nth-child(1), .header_trigger.active .line:nth-child(3) {
     -webkit-transition-delay: .1s;
     -o-transition-delay: .1s;
     transition-delay: .1s
@@ -566,9 +586,9 @@ img {
     order: 3;
     max-height: 0;
     overflow: hidden;
-    -webkit-transition: max-height .5s ease-in-out,padding-top .6s ease-in;
-    -o-transition: max-height .5s ease-in-out,padding-top .6s ease-in;
-    transition: max-height .5s ease-in-out,padding-top .6s ease-in
+    -webkit-transition: max-height .5s ease-in-out, padding-top .6s ease-in;
+    -o-transition: max-height .5s ease-in-out, padding-top .6s ease-in;
+    transition: max-height .5s ease-in-out, padding-top .6s ease-in
 }
 
 .header_nav.active {
@@ -581,19 +601,19 @@ img {
     text-align: center
 }
 
-.header_nav-list .dropdown-toggle.active,.header_nav-list .nav-item.active {
-    background: #eb1616
+.header_nav-list .dropdown-toggle.active, .header_nav-list .nav-item.active {
+    background: #bbb
 }
 
 .header_nav-list_item {
-    font-family: Oswald,sans-serif;
+    font-family: Oswald, sans-serif;
     font-weight: 500;
     font-size: 16px;
     text-transform: uppercase;
     color: #fff
 }
 
-.header_nav-list_item.dropdown .list-item,.header_nav-list_item:not(.header_nav-list_item.dropdown) {
+.header_nav-list_item.dropdown .list-item, .header_nav-list_item:not(.header_nav-list_item.dropdown) {
     padding: 20px 0
 }
 
@@ -662,37 +682,37 @@ img {
         position: relative
     }
 
-    .header_nav-list .dropdown-toggle,.header_nav-list .nav-item {
+    .header_nav-list .dropdown-toggle, .header_nav-list .nav-item {
         position: relative;
         cursor: pointer
     }
 
-    .header_nav-list .dropdown-toggle:before,.header_nav-list .nav-item:before {
+    .header_nav-list .dropdown-toggle:before, .header_nav-list .nav-item:before {
         content: '';
         position: absolute;
         width: 100%;
-        height: 10px;
+        height: 4px;
         background: 0 0;
-        top: -42px;
+        top: 45px;
         left: 0;
         -webkit-transition: background-color .3s ease-in-out;
         -o-transition: background-color .3s ease-in-out;
         transition: background-color .3s ease-in-out
     }
 
-    .header_nav-list .dropdown-toggle.active,.header_nav-list .dropdown-toggle:hover,.header_nav-list .nav-item.active,.header_nav-list .nav-item:hover {
+    .header_nav-list .dropdown-toggle.active, .header_nav-list .dropdown-toggle:hover, .header_nav-list .nav-item.active, .header_nav-list .nav-item:hover {
         background: 0 0
     }
 
-    .header_nav-list .dropdown-toggle.active:before,.header_nav-list .dropdown-toggle:hover:before,.header_nav-list .nav-item.active:before,.header_nav-list .nav-item:hover:before {
-        background: #eb1616
+    .header_nav-list .dropdown-toggle.active:before, .header_nav-list .dropdown-toggle:hover:before, .header_nav-list .nav-item.active:before, .header_nav-list .nav-item:hover:before {
+        background: #fff
     }
 
     .header_nav-list_item {
         margin-right: 30px
     }
 
-    .header_nav-list_item.dropdown .list-item,.header_nav-list_item:not(.header_nav-list_item.dropdown) {
+    .header_nav-list_item.dropdown .list-item, .header_nav-list_item:not(.header_nav-list_item.dropdown) {
         padding: 0
     }
 
@@ -728,11 +748,11 @@ img {
         background: #2c2c2c
     }
 
-    .header_nav-list .dropdown-menu .nav-item.active,.header_nav-list .dropdown-menu .nav-item:hover {
+    .header_nav-list .dropdown-menu .nav-item.active, .header_nav-list .dropdown-menu .nav-item:hover {
         background: #eb1616
     }
 
-    .header_nav-list .dropdown-menu .nav-item.active:before,.header_nav-list .dropdown-menu .nav-item:hover:before {
+    .header_nav-list .dropdown-menu .nav-item.active:before, .header_nav-list .dropdown-menu .nav-item:hover:before {
         display: none
     }
 
@@ -762,11 +782,15 @@ img {
     bottom: 0
 }
 
+.hero h1,p{
+    color: #fff;
+}
+
 .hero_slider-pagination {
-    top: unset!important;
+    top: unset !important;
     bottom: 0;
-    height: 10px!important;
-    background: 0 0!important
+    height: 10px !important;
+    background: 0 0 !important
 }
 
 .hero_slider-pagination .swiper-pagination-progressbar-fill {
@@ -804,7 +828,7 @@ img {
     text-transform: uppercase;
     font-size: 28px;
     line-height: 1.5;
-    font-family: Oswald,sans-serif;
+    font-family: Oswald, sans-serif;
     font-weight: 500
 }
 
@@ -815,8 +839,8 @@ img {
     height: 50%;
     width: 100%;
     z-index: 1;
-    background: -o-linear-gradient(271.87deg,rgba(32,32,32,0) 37.89%,#202020 82.56%);
-    background: linear-gradient(178.13deg,rgba(32,32,32,0) 37.89%,#202020 82.56%)
+    background: -o-linear-gradient(271.87deg, rgba(32, 32, 32, 0) 37.89%, #202020 82.56%);
+    background: linear-gradient(178.13deg, rgba(32, 32, 32, 0) 37.89%, #202020 82.56%)
 }
 
 @media screen and (min-width:767.98px) {
@@ -846,7 +870,7 @@ img {
         cursor: pointer
     }
 
-    .hero_slider-control:focus,.hero_slider-control:hover {
+    .hero_slider-control:focus, .hero_slider-control:hover {
         color: #eb1616
     }
 
@@ -863,7 +887,8 @@ img {
 }
 
 .about_info-text {
-    margin: 15px 0 30px
+    margin: 15px 0 30px;
+    color: #000;
 }
 
 .about_info-fact_title {
@@ -892,14 +917,16 @@ img {
     }
 
     .about_info-fact_description {
-        max-width: 270px
+        max-width: 270px;
+        color: #000
     }
 }
 
 @media screen and (min-width:767.98px) {
     .about_header-subtitle {
         top: -30%;
-        left: -5%
+        left: 35%;
+        color: #bbb
     }
 
     .about_info-text {
@@ -946,7 +973,7 @@ img {
         margin-top: 50px
     }
 
-    .about_header,.about_info {
+    .about_header, .about_info {
         max-width: unset
     }
 }
@@ -1002,13 +1029,15 @@ img {
 }
 
 .services_list-item .main .description {
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    color: #000;
 }
 
 @media screen and (min-width:767.98px) {
     .services_header-subtitle {
         top: -45%;
-        left: 22%
+        left: 22%;
+        color: #bbb
     }
 
     .services_list {
@@ -1053,7 +1082,8 @@ img {
     }
 
     .services_header-text {
-        max-width: unset
+        max-width: unset;
+        color: #000;
     }
 
     .services_list-item[data-order="4"] {
@@ -1061,10 +1091,14 @@ img {
     }
 }
 
+.schedule h2{
+    color: #fff;
+}
+
 .schedule {
     color: #fff;
     background: url(../img/schedule-bg.jpg) center/cover no-repeat;
-    position: relative;
+    position: relative
 }
 
 .schedule .overlay {
@@ -1074,8 +1108,8 @@ img {
     width: 100%;
     height: 100%;
     z-index: 1;
-    background: -o-radial-gradient(50% 50%,50% 571.32%,rgba(32,32,32,0) 0,#202020 100%);
-    background: radial-gradient(50% 571.32% at 50% 50%,rgba(32,32,32,0) 0,#202020 100%)
+    background: -o-radial-gradient(50% 50%, 50% 571.32%, rgba(32, 32, 32, 0) 0, #202020 100%);
+    background: radial-gradient(50% 571.32% at 50% 50%, rgba(32, 32, 32, 0) 0, #202020 90%)
 }
 
 .schedule_container {
@@ -1105,7 +1139,7 @@ img {
 }
 
 .schedule_hours-list_group .list-item .weekday {
-    font-family: Oswald,sans-serif;
+    font-family: Oswald, sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.7;
@@ -1235,7 +1269,7 @@ img {
     font-size: 24px;
     line-height: 1.5;
     text-transform: uppercase;
-    font-family: Oswald,sans-serif;
+    font-family: Oswald, sans-serif;
     font-weight: 500;
     color: #fff;
     margin-bottom: 10px
@@ -1288,7 +1322,9 @@ img {
 }
 
 .footer {
-    padding: 80px 0 0
+    padding: 80px 0 0;
+    background-color: #000
+
 }
 
 .footer_logo {
@@ -1315,7 +1351,7 @@ img {
     text-transform: uppercase;
     font-size: 18px;
     line-height: 1.5;
-    font-family: Oswald,sans-serif;
+    font-family: Oswald, sans-serif;
     font-weight: 500
 }
 
@@ -1324,7 +1360,8 @@ img {
 }
 
 .footer_contacts-mail {
-    position: relative
+    position: relative;
+    color: white;
 }
 
 .footer_contacts-mail:after {
@@ -1340,13 +1377,13 @@ img {
     transition: width .5s ease-in-out
 }
 
-.footer_contacts-mail:focus:after,.footer_contacts-mail:hover:after {
+.footer_contacts-mail:focus:after, .footer_contacts-mail:hover:after {
     width: 100%
 }
 
 .footer_contacts-socials {
     margin: 30px 0 40px;
-    max-height: 22px
+    max-height: 32px
 }
 
 .footer_contacts-socials .list-item {
@@ -1362,8 +1399,9 @@ img {
     font-size: 22px
 }
 
-.footer_contacts-socials .list-item .link:focus,.footer_contacts-socials .list-item .link:hover {
-    color: #eb1616
+.footer_contacts-socials .list-item .link:focus, .footer_contacts-socials .list-item .link:hover {
+    color: #bd362f;
+    margin: auto;
 }
 
 .footer_newsletter-text {
@@ -1378,11 +1416,11 @@ img {
     margin-bottom: 10px
 }
 
-.footer_newsletter-form .field:focus,.footer_newsletter-form .field:hover {
+.footer_newsletter-form .field:focus, .footer_newsletter-form .field:hover {
     border-color: #fff
 }
 
-.footer_newsletter-form .btn,.footer_newsletter-form .field {
+.footer_newsletter-form .btn, .footer_newsletter-form .field {
     width: 100%
 }
 
@@ -1457,7 +1495,7 @@ img {
         margin-bottom: 0
     }
 
-    .footer_contacts,.footer_newsletter {
+    .footer_contacts, .footer_newsletter {
         margin-top: -5px
     }
 
@@ -1521,7 +1559,7 @@ img {
 }
 
 .promo_popup {
-    background: url(../img/blog09.jpg) center/cover no-repeat,rgba(32,32,32,.7);
+    background: url(../img/blog09.jpg) center/cover no-repeat, rgba(32, 32, 32, .5);
     background-blend-mode: overlay;
     padding: 30px;
     max-width: 650px;
@@ -1529,7 +1567,8 @@ img {
 }
 
 .promo_popup-title {
-    text-transform: uppercase
+    text-transform: uppercase;
+    color: #fff
 }
 
 .promo_popup-close {
@@ -1543,7 +1582,7 @@ img {
     transition: color .3s ease-in-out
 }
 
-.promo_popup-close:focus,.promo_popup-close:hover {
+.promo_popup-close:focus, .promo_popup-close:hover {
     color: #eb1616
 }
 
@@ -1583,4 +1622,5 @@ img {
         margin: 0 auto
     }
 }
+
 /*# sourceMappingURL=../sourcemaps/index.css.map */

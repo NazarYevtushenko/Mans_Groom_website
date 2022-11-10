@@ -1,15 +1,4 @@
-/**
- * Barbercrop
- * Barbercrop is a full featured barber shop template
- * Exclusively on https://1.envato.market/barbercrop-html
- *
- * @encoding        UTF-8
- * @version         1.0.4
- * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
- * @license         Envato License https://1.envato.market/KYbje
- * @contributors    Lamber Lilith (winter.rituel@gmail.com)
- * @support         help@merkulov.design
- **/
+
 * {
     margin: 0;
     padding: 0;
@@ -22,11 +11,11 @@ html {
     scroll-behavior: smooth
 }
 
-body,html {
+body, html {
     overflow-x: hidden
 }
 
-ol,ul {
+ol, ul {
     list-style: none
 }
 
@@ -34,7 +23,7 @@ a {
     text-decoration: none
 }
 
-a,button,input,textarea {
+a, button, input, textarea {
     background: 0 0;
     color: inherit;
     font-family: inherit;
@@ -60,7 +49,6 @@ textarea {
     0% {
         opacity: 0
     }
-
     100% {
         opacity: 1
     }
@@ -70,7 +58,6 @@ textarea {
     0% {
         opacity: 0
     }
-
     100% {
         opacity: 1
     }
@@ -80,7 +67,6 @@ textarea {
     0% {
         opacity: 1
     }
-
     100% {
         opacity: 0
     }
@@ -90,7 +76,6 @@ textarea {
     0% {
         opacity: 1
     }
-
     100% {
         opacity: 0
     }
@@ -105,7 +90,7 @@ body {
     background: #202020;
     font-size: 16px;
     line-height: 1.7;
-    font-family: Roboto,sans-serif
+    font-family: Roboto, sans-serif
 }
 
 body.swal2-shown {
@@ -123,8 +108,8 @@ main {
     transition: padding-top .3s ease-in-out
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: Oswald,sans-serif;
+h1, h2, h3, h4, h5, h6 {
+    font-family: Oswald, sans-serif;
     font-weight: 500;
     text-transform: uppercase;
     color: #fff
@@ -160,7 +145,7 @@ h6 {
     line-height: 1.3
 }
 
-a,button,input,textarea {
+a, button, input, textarea {
     -webkit-transition: .3s ease-in-out;
     -o-transition: .3s ease-in-out;
     transition: .3s ease-in-out
@@ -191,7 +176,7 @@ img {
 
 .section_header-subtitle {
     text-transform: uppercase;
-    font-family: Oswald,sans-serif;
+    font-family: Oswald, sans-serif;
     font-weight: 600;
     color: #2c2c2c;
     font-size: 80px;
@@ -209,11 +194,11 @@ img {
 
 .theme-element {
     text-align: center;
-    background: #eb1616;
-    color: #fff;
+    background: #fff;
+    color: #000;
     text-transform: uppercase;
-    border: 2px solid #eb1616;
-    font-family: Oswald,sans-serif;
+    border: 2px solid #fff;
+    font-family: Oswald, sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 22px;
@@ -225,14 +210,14 @@ img {
 }
 
 .theme-element.btn:hover {
-    color: #eb1616
+    color: #fff
 }
 
 .theme-element.btn--revert {
     background: 0 0
 }
 
-.theme-element.btn--revert.current,.theme-element.btn--revert:focus,.theme-element.btn--revert:hover {
+.theme-element.btn--revert.current, .theme-element.btn--revert:focus, .theme-element.btn--revert:hover {
     background: #eb1616;
     color: #fff
 }
@@ -241,7 +226,7 @@ img {
     padding: 5px 10px
 }
 
-.theme-element:focus,.theme-element:hover {
+.theme-element:focus, .theme-element:hover {
     background: 0 0
 }
 
@@ -316,7 +301,7 @@ img {
     opacity: 0
 }
 
-.field:focus,.field:hover {
+.field:focus, .field:hover {
     border-color: #fff
 }
 
@@ -342,7 +327,7 @@ img {
     transition: width .5s ease-in-out
 }
 
-.link--underline:focus:after,.link--underline:hover:after {
+.link--underline:focus:after, .link--underline:hover:after {
     width: 100%
 }
 
@@ -364,13 +349,13 @@ img {
 .brand-logo_name {
     color: #fff;
     text-transform: uppercase;
-    font-family: Oswald,sans-serif;
+    font-family: Oswald, sans-serif;
     font-weight: 500;
     font-size: 28px;
     line-height: 1
 }
 
-@media screen and (min-width:767.98px) {
+@media screen and (min-width: 767.98px) {
     h1 {
         font-size: 50px;
         line-height: 1.2
@@ -406,7 +391,7 @@ img {
     }
 }
 
-@media screen and (min-width:991.98px) {
+@media screen and (min-width: 991.98px) {
     h1 {
         font-size: 65px
     }
@@ -429,7 +414,7 @@ img {
     }
 }
 
-@media screen and (min-width:1199.98px) {
+@media screen and (min-width: 1199.98px) {
     .container {
         margin: 0 auto;
         min-width: unset
@@ -440,9 +425,9 @@ img {
     background: #fff;
     min-width: 280px;
     max-width: 360px;
-    display: -webkit-box!important;
-    display: -ms-flexbox!important;
-    display: flex!important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -459,7 +444,7 @@ img {
     transition: color .3s ease-in-out
 }
 
-.alert_popup-close:focus,.alert_popup-close:hover {
+.alert_popup-close:focus, .alert_popup-close:hover {
     color: #eb1616
 }
 
@@ -479,7 +464,7 @@ img {
     -webkit-transition: -webkit-transform .5s ease-in-out;
     transition: transform .5s ease-in-out;
     -o-transition: transform .5s ease-in-out;
-    transition: transform .5s ease-in-out,-webkit-transform .5s ease-in-out
+    transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out
 }
 
 .header--pinned {
@@ -546,7 +531,7 @@ img {
     width: 0
 }
 
-.header_trigger.active .line:nth-child(1),.header_trigger.active .line:nth-child(3) {
+.header_trigger.active .line:nth-child(1), .header_trigger.active .line:nth-child(3) {
     -webkit-transition-delay: .1s;
     -o-transition-delay: .1s;
     transition-delay: .1s
@@ -577,9 +562,9 @@ img {
     order: 3;
     max-height: 0;
     overflow: hidden;
-    -webkit-transition: max-height .5s ease-in-out,padding-top .6s ease-in;
-    -o-transition: max-height .5s ease-in-out,padding-top .6s ease-in;
-    transition: max-height .5s ease-in-out,padding-top .6s ease-in
+    -webkit-transition: max-height .5s ease-in-out, padding-top .6s ease-in;
+    -o-transition: max-height .5s ease-in-out, padding-top .6s ease-in;
+    transition: max-height .5s ease-in-out, padding-top .6s ease-in
 }
 
 .header_nav.active {
@@ -592,19 +577,19 @@ img {
     text-align: center
 }
 
-.header_nav-list .dropdown-toggle.active,.header_nav-list .nav-item.active {
-    background: #eb1616
+.header_nav-list .dropdown-toggle.active, .header_nav-list .nav-item.active {
+    background: #bbb
 }
 
 .header_nav-list_item {
-    font-family: Oswald,sans-serif;
+    font-family: Oswald, sans-serif;
     font-weight: 500;
     font-size: 16px;
     text-transform: uppercase;
     color: #fff
 }
 
-.header_nav-list_item.dropdown .list-item,.header_nav-list_item:not(.header_nav-list_item.dropdown) {
+.header_nav-list_item.dropdown .list-item, .header_nav-list_item:not(.header_nav-list_item.dropdown) {
     padding: 20px 0
 }
 
@@ -631,6 +616,11 @@ img {
 
 .header_btn {
     display: none
+}
+
+.header img{
+    object-fit: contain;
+    padding: 30px;
 }
 
 @media screen and (min-width:991.98px) {
@@ -673,37 +663,37 @@ img {
         position: relative
     }
 
-    .header_nav-list .dropdown-toggle,.header_nav-list .nav-item {
+    .header_nav-list .dropdown-toggle, .header_nav-list .nav-item {
         position: relative;
         cursor: pointer
     }
 
-    .header_nav-list .dropdown-toggle:before,.header_nav-list .nav-item:before {
+    .header_nav-list .dropdown-toggle:before, .header_nav-list .nav-item:before {
         content: '';
         position: absolute;
         width: 100%;
-        height: 10px;
+        height: 4px;
         background: 0 0;
-        top: -42px;
+        top: 45px;
         left: 0;
         -webkit-transition: background-color .3s ease-in-out;
         -o-transition: background-color .3s ease-in-out;
         transition: background-color .3s ease-in-out
     }
 
-    .header_nav-list .dropdown-toggle.active,.header_nav-list .dropdown-toggle:hover,.header_nav-list .nav-item.active,.header_nav-list .nav-item:hover {
+    .header_nav-list .dropdown-toggle.active, .header_nav-list .dropdown-toggle:hover, .header_nav-list .nav-item.active, .header_nav-list .nav-item:hover {
         background: 0 0
     }
 
-    .header_nav-list .dropdown-toggle.active:before,.header_nav-list .dropdown-toggle:hover:before,.header_nav-list .nav-item.active:before,.header_nav-list .nav-item:hover:before {
-        background: #eb1616
+    .header_nav-list .dropdown-toggle.active:before, .header_nav-list .dropdown-toggle:hover:before, .header_nav-list .nav-item.active:before, .header_nav-list .nav-item:hover:before {
+        background: #fff
     }
 
     .header_nav-list_item {
         margin-right: 30px
     }
 
-    .header_nav-list_item.dropdown .list-item,.header_nav-list_item:not(.header_nav-list_item.dropdown) {
+    .header_nav-list_item.dropdown .list-item, .header_nav-list_item:not(.header_nav-list_item.dropdown) {
         padding: 0
     }
 
@@ -739,11 +729,11 @@ img {
         background: #2c2c2c
     }
 
-    .header_nav-list .dropdown-menu .nav-item.active,.header_nav-list .dropdown-menu .nav-item:hover {
+    .header_nav-list .dropdown-menu .nav-item.active, .header_nav-list .dropdown-menu .nav-item:hover {
         background: #eb1616
     }
 
-    .header_nav-list .dropdown-menu .nav-item.active:before,.header_nav-list .dropdown-menu .nav-item:hover:before {
+    .header_nav-list .dropdown-menu .nav-item.active:before, .header_nav-list .dropdown-menu .nav-item:hover:before {
         display: none
     }
 
@@ -753,7 +743,7 @@ img {
     }
 }
 
-.contacts_header,.contacts_main-data {
+.contacts_header, .contacts_main-data {
     margin-bottom: 40px
 }
 
@@ -786,7 +776,7 @@ img {
     font-size: 18px;
     line-height: 1.7;
     font-weight: 500;
-    font-family: Oswald,sans-serif;
+    font-family: Oswald, sans-serif;
     margin-bottom: 10px;
     display: block
 }
@@ -811,7 +801,7 @@ img {
     filter: grayscale(1)
 }
 
-@media screen and (min-width:767.98px) {
+@media screen and (min-width: 767.98px) {
     .contacts_header-subtitle {
         top: -90%;
         left: 14%
@@ -844,7 +834,7 @@ img {
     }
 }
 
-@media screen and (min-width:991.98px) {
+@media screen and (min-width: 991.98px) {
     .contacts_header {
         margin-bottom: 110px
     }
@@ -862,28 +852,28 @@ img {
     }
 }
 
-@media screen and (min-width:1199.98px) {
+@media screen and (min-width: 1199.98px) {
     .contacts_header-subtitle {
         left: 9%
     }
 }
 
-@media screen and (min-width:1399.98px) {
+@media screen and (min-width: 1399.98px) {
     .contacts_header-subtitle {
         left: 7%
     }
 }
 
-a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
-    display: none!important
+a[href^="http://maps.google.com/maps"], a[href^="https://maps.google.com/maps"] {
+    display: none !important
 }
 
-.gm-style-cc,.gmnoprint a,.gmnoprint span {
+.gm-style-cc, .gmnoprint a, .gmnoprint span {
     display: none
 }
 
 .gmnoprint div {
-    background: 0 0!important
+    background: 0 0 !important
 }
 
 .footer {
@@ -914,7 +904,7 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
     text-transform: uppercase;
     font-size: 18px;
     line-height: 1.5;
-    font-family: Oswald,sans-serif;
+    font-family: Oswald, sans-serif;
     font-weight: 500
 }
 
@@ -939,7 +929,7 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
     transition: width .5s ease-in-out
 }
 
-.footer_contacts-mail:focus:after,.footer_contacts-mail:hover:after {
+.footer_contacts-mail:focus:after, .footer_contacts-mail:hover:after {
     width: 100%
 }
 
@@ -961,7 +951,7 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
     font-size: 22px
 }
 
-.footer_contacts-socials .list-item .link:focus,.footer_contacts-socials .list-item .link:hover {
+.footer_contacts-socials .list-item .link:focus, .footer_contacts-socials .list-item .link:hover {
     color: #eb1616
 }
 
@@ -977,11 +967,11 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
     margin-bottom: 10px
 }
 
-.footer_newsletter-form .field:focus,.footer_newsletter-form .field:hover {
+.footer_newsletter-form .field:focus, .footer_newsletter-form .field:hover {
     border-color: #fff
 }
 
-.footer_newsletter-form .btn,.footer_newsletter-form .field {
+.footer_newsletter-form .btn, .footer_newsletter-form .field {
     width: 100%
 }
 
@@ -1005,7 +995,7 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
     align-items: center
 }
 
-@media screen and (min-width:575.98px) {
+@media screen and (min-width: 575.98px) {
     .contacts_main-form .btn {
         max-width: -webkit-fit-content;
         max-width: -moz-fit-content;
@@ -1023,7 +1013,7 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
     }
 }
 
-@media screen and (min-width:767.98px) {
+@media screen and (min-width: 767.98px) {
     .footer {
         padding: 100px 0 0
     }
@@ -1052,7 +1042,7 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
     }
 }
 
-@media screen and (min-width:991.98px) {
+@media screen and (min-width: 991.98px) {
     .footer {
         padding: 110px 0
     }
@@ -1062,7 +1052,7 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
         margin-bottom: 0
     }
 
-    .footer_contacts,.footer_newsletter {
+    .footer_contacts, .footer_newsletter {
         margin-top: -5px
     }
 
@@ -1111,7 +1101,7 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
     }
 }
 
-@media screen and (min-width:1199.98px) {
+@media screen and (min-width: 1199.98px) {
     .footer_contacts {
         margin-right: 0
     }
@@ -1124,4 +1114,5 @@ a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
         max-width: 471px
     }
 }
+
 /*# sourceMappingURL=../sourcemaps/contacts.css.map */
