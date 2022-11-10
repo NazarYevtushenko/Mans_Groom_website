@@ -218,10 +218,10 @@ img {
 
 .theme-element {
   text-align: center;
-  background: #eb1616;
-  color: #fff;
+  background: #fff;
+  color: #000;
   text-transform: uppercase;
-  border: 2px solid #eb1616;
+  border: 2px solid #fff;
   font-family: Oswald, sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -234,7 +234,7 @@ img {
 }
 
 .theme-element.btn:hover {
-  color: #eb1616
+  color: #fff
 }
 
 .theme-element.btn--revert {
@@ -1360,7 +1360,8 @@ img {
 }
 
 .footer_contacts-mail {
-  position: relative
+  position: relative;
+  color: white;
 }
 
 .footer_contacts-mail:after {
@@ -1382,7 +1383,7 @@ img {
 
 .footer_contacts-socials {
   margin: 30px 0 40px;
-  max-height: 22px
+  max-height: 32px
 }
 
 .footer_contacts-socials .list-item {
@@ -1399,7 +1400,8 @@ img {
 }
 
 .footer_contacts-socials .list-item .link:focus, .footer_contacts-socials .list-item .link:hover {
-  color: #eb1616
+  color: #bd362f;
+  margin: auto;
 }
 
 .footer_newsletter-text {
