@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="91a4d03d-3c82-40ea-8cfa-24adccea5654" name="mensgroom.ee" url="http://mensgroom.ee">
+      <webServer id="91a4d03d-3c82-40ea-8cfa-24adccea5654" name="mensgroom.ee" url="mensgroom.ee">
         <fileTransfer host="mensgroom.ee" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
