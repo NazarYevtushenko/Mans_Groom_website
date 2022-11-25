@@ -397,7 +397,7 @@ img {
     }
 
     .section {
-        padding: 110px 0
+        padding: 0px 0
     }
 
     .section--nopb {
@@ -1044,7 +1044,7 @@ a[href^="http://maps.google.com/maps"], a[href^="https://maps.google.com/maps"] 
 
 @media screen and (min-width: 991.98px) {
     .footer {
-        padding: 110px 0
+        padding: 10px 0
     }
 
     .footer_logo {
