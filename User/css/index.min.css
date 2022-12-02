@@ -678,19 +678,6 @@ img {
     margin: 0 -30px 0 0
   }
 
-  .lang_nav-list{
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      justify-content: flex-start;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      margin: 0 -30px 0 0
-  }
-
   .header_nav-list.dropdown {
     position: relative
   }
